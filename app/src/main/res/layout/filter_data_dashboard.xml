@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/filter_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:scrollbarTrackVertical="@color/orange_button"
+            android:scrollbarThumbVertical="@color/grey"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:text="Month"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/grey_dark"
+                        app:boxStrokeColor="@color/grey"
+                        app:boxStrokeWidth="0.5dp"
+                        app:boxStrokeWidthFocused="0.9dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:startIconTint="@color/grey_light">
+
+                        <EditText
+                            android:id="@+id/edt_select_month_Dash"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/proxima_family"
+                            android:hint="Select Month"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:text="AR Type"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_ar_Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Choose AR Type" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:text="Consol Entity"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_consol_entity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Choose Consol Entity" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingRight="6dp"
+                    android:text="SBU"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_sbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Select SBU" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingRight="6dp"
+                    android:text="Cluster"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_cluster"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Select Cluster" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingRight="6dp"
+                    android:text="Vertical"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Select Vertical" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingRight="6dp"
+                    android:text="Region"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Choose Region" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/proxima_nova_semi_bold"
+                    android:gravity="start|center"
+                    android:paddingRight="6dp"
+                    android:text="Country"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/sp_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/ar_type"
+                    android:fontFamily="@font/proxima_family"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    app:hintText="Choose Country" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_profile_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/btn_color"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="Search"
+                    android:textColor="@color/white" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="2.8"
+                    android:background="?selectableItemBackground"
+                    android:backgroundTint="@color/grey_very_light"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/iv_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_reset"
+                        app:tint="@color/icon_color" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="35dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/filter_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp">
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/btn_filterData_dashboard"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_weight="1"
+                                    android:backgroundTint="@color/btn_color"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    android:text="Click here for filter data"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/circle_view_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                app:cardCornerRadius="5dp"
+                                android:elevation="2dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleViewdsf"
+                                    android:layout_gravity="center"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_margin="5dp"
+                                    app:cpv_autoTextSize="true"
+                                    app:cpv_barColor="#e96f28"
+                                    app:cpv_barWidth="25dp"
+                                    app:cpv_innerContourSize="0dp"
+                                    app:cpv_maxValue="100"
+                                    app:cpv_outerContourSize="0dp"
+                                    app:cpv_rimColor="#f4f4f4"
+                                    app:cpv_rimWidth="25dp"
+                                    app:cpv_seekMode="true"
+                                    app:cpv_showUnit="true"
+                                    app:cpv_spinColor="#e96f28"
+                                    app:cpv_textColor="#FF000000"
+                                    app:cpv_textScale="1"
+                                    app:cpv_unit="%"
+                                    app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                    app:cpv_unitColor="#FF000000"
+                                    app:cpv_unitPosition="right_bottom"
+                                    app:cpv_unitScale="1"
+                                    app:cpv_value="63.34"
+                                    app:cpv_textSize="2sp"
+                                    app:cpv_blockCount="30"
+                                    app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="OD"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                android:elevation="2dp"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleViewdsfd"
+                                    android:layout_gravity="center"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_margin="5dp"
+                                    app:cpv_autoTextSize="true"
+                                    app:cpv_barColor="#5bbf59"
+                                    app:cpv_barWidth="25dp"
+                                    app:cpv_innerContourSize="0dp"
+                                    app:cpv_maxValue="100"
+                                    app:cpv_outerContourSize="0dp"
+                                    app:cpv_rimColor="#f4f4f4"
+                                    app:cpv_rimWidth="25dp"
+                                    app:cpv_seekMode="true"
+                                    app:cpv_showUnit="true"
+                                    app:cpv_spinColor="#5bbf59"
+                                    app:cpv_textColor="#FF000000"
+                                    app:cpv_textScale="1"
+                                    app:cpv_unit="%"
+                                    app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                    app:cpv_unitColor="#FF000000"
+                                    app:cpv_unitPosition="right_bottom"
+                                    app:cpv_unitScale="1"
+                                    app:cpv_value="41.95"
+                                    app:cpv_textSize="2sp"
+                                    app:cpv_blockCount="30"
+                                    app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="FTM"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                app:cardCornerRadius="5dp"
+                                android:elevation="2dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                <at.grabner.circleprogress.CircleProgressView
+                                    android:id="@+id/circleViewdsfsd"
+                                    android:layout_gravity="center"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_margin="5dp"
+                                    app:cpv_autoTextSize="true"
+                                    app:cpv_barColor="@color/orange"
+                                    app:cpv_barWidth="25dp"
+                                    app:cpv_innerContourSize="0dp"
+                                    app:cpv_maxValue="100"
+                                    app:cpv_outerContourSize="0dp"
+                                    app:cpv_rimColor="#f4f4f4"
+                                    app:cpv_rimWidth="25dp"
+                                    app:cpv_seekMode="true"
+                                    app:cpv_showUnit="true"
+                                    app:cpv_spinColor="@color/orange_button"
+                                    app:cpv_textColor="#FF000000"
+                                    app:cpv_textScale="1"
+                                    app:cpv_unit="%"
+                                    app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                    app:cpv_unitColor="#FF000000"
+                                    app:cpv_unitPosition="right_bottom"
+                                    app:cpv_unitScale="1"
+                                    app:cpv_value="0"
+                                    app:cpv_textSize="2sp"
+                                    app:cpv_blockCount="30"
+                                    app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="RTN/WRTN"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/circle_view_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                app:cardCornerRadius="5dp"
+                                android:elevation="2dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <at.grabner.circleprogress.CircleProgressView
+
+                                        android:layout_gravity="center"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cpv_autoTextSize="true"
+                                        app:cpv_barColor="#55a7fc"
+                                        app:cpv_barWidth="25dp"
+                                        app:cpv_innerContourSize="0dp"
+                                        app:cpv_maxValue="100"
+                                        app:cpv_outerContourSize="0dp"
+                                        app:cpv_rimColor="#f4f4f4"
+                                        app:cpv_rimWidth="25dp"
+                                        app:cpv_seekMode="true"
+                                        app:cpv_showUnit="true"
+                                        app:cpv_spinColor="#55a7fc"
+                                        app:cpv_textColor="#FF000000"
+                                        app:cpv_textScale="1"
+                                        app:cpv_unit="%"
+                                        app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                        app:cpv_unitColor="#FF000000"
+                                        app:cpv_unitPosition="right_bottom"
+                                        app:cpv_unitScale="1"
+                                        app:cpv_value="52.42"
+                                        app:cpv_textSize="2sp"
+                                        app:cpv_blockCount="30"
+                                        app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="Not Due"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                android:elevation="2dp"
+                                android:layout_margin="5dp"
+                                app:cardCornerRadius="5dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <at.grabner.circleprogress.CircleProgressView
+
+                                        android:layout_gravity="center"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cpv_autoTextSize="true"
+                                        app:cpv_barColor="#5886cb"
+                                        app:cpv_barWidth="25dp"
+                                        app:cpv_innerContourSize="0dp"
+                                        app:cpv_maxValue="100"
+                                        app:cpv_outerContourSize="0dp"
+                                        app:cpv_rimColor="#f4f4f4"
+                                        app:cpv_rimWidth="25dp"
+                                        app:cpv_seekMode="true"
+                                        app:cpv_showUnit="true"
+                                        app:cpv_spinColor="#5886cb"
+                                        app:cpv_textColor="#FF000000"
+                                        app:cpv_textScale="1"
+                                        app:cpv_unit="%"
+                                        app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                        app:cpv_unitColor="#FF000000"
+                                        app:cpv_unitPosition="right_bottom"
+                                        app:cpv_unitScale="1"
+                                        app:cpv_value="20.96"
+                                        app:cpv_textSize="2sp"
+                                        app:cpv_blockCount="30"
+                                        app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="Same Mth"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                app:cardCornerRadius="5dp"
+                                android:elevation="2dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <at.grabner.circleprogress.CircleProgressView
+
+                                        android:layout_gravity="center"
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:layout_margin="5dp"
+                                        app:cpv_autoTextSize="true"
+                                        app:cpv_barColor="#ad9efd"
+                                        app:cpv_barWidth="25dp"
+                                        app:cpv_innerContourSize="0dp"
+                                        app:cpv_maxValue="100"
+                                        app:cpv_outerContourSize="0dp"
+                                        app:cpv_rimColor="#f4f4f4"
+                                        app:cpv_rimWidth="25dp"
+                                        app:cpv_seekMode="true"
+                                        app:cpv_showUnit="true"
+                                        app:cpv_spinColor="#ad9efd"
+                                        app:cpv_textColor="#FF000000"
+                                        app:cpv_textScale="1"
+                                        app:cpv_unit="%"
+                                        app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                        app:cpv_unitColor="#FF000000"
+                                        app:cpv_unitPosition="right_bottom"
+                                        app:cpv_unitScale="1"
+                                        app:cpv_value="35.64"
+                                        app:cpv_textSize="2sp"
+                                        app:cpv_blockCount="30"
+                                        app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_marginTop="110dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="Advance"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/circle_view_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_weight="1"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#FFFFFFFF"
+                                app:cardCornerRadius="5dp"
+                                android:elevation="2dp"
+                                app:cardElevation="2dp">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <at.grabner.circleprogress.CircleProgressView
+
+                                        android:layout_gravity="center"
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:layout_margin="5dp"
+                                        app:cpv_autoTextSize="true"
+                                        app:cpv_barColor="#ad3c57"
+                                        app:cpv_barWidth="25dp"
+                                        app:cpv_innerContourSize="0dp"
+                                        app:cpv_maxValue="100"
+                                        app:cpv_outerContourSize="0dp"
+                                        app:cpv_rimColor="#f4f4f4"
+                                        app:cpv_rimWidth="25dp"
+                                        app:cpv_seekMode="true"
+                                        app:cpv_showUnit="true"
+                                        app:cpv_spinColor="#ad3c57"
+                                        app:cpv_textColor="#FF000000"
+                                        app:cpv_textScale="1"
+                                        app:cpv_unit="%"
+                                        app:cpv_startAngle="@android:integer/config_longAnimTime"
+                                        app:cpv_unitColor="#FF000000"
+                                        app:cpv_unitPosition="right_bottom"
+                                        app:cpv_unitScale="1"
+                                        app:cpv_value="52.42"
+                                        app:cpv_textSize="2sp"
+                                        app:cpv_blockCount="30"
+                                        app:cpv_blockScale="0.5" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_marginTop="120dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:fontFamily="@font/proxima_nova_bold"
+                                    android:text="Total Collection"
+                                    android:textColor="@color/purple_500"
+                                    android:textSize="16sp" />
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/ar_graph"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:elevation="10dp"
+                                android:backgroundTint="@color/white"
+                                app:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:background="#e0e0e0"
+                                    android:fontFamily="@font/proxima_nova_semi_bold"
+                                    android:text="AR, Collection Plan, Actual Collection (MN)"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/stackedChart"
+                                    android:background="@color/white"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/od_graph"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:elevation="10dp"
+                                android:backgroundTint="@color/white"
+                                app:cardCornerRadius="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:paddingBottom="6dp"
+                                    android:paddingTop="6dp"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:background="#e0e0e0"
+                                    android:fontFamily="@font/proxima_nova_semi_bold"
+                                    android:text="OD Split By Ageing (MN)"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <!--<com.github.mikephil.charting.charts.BarChart
+                                    android:id="@+id/groupChart"
+                                    android:background="@color/white"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp" />-->
+
+                                <com.github.mikephil.charting.charts.CombinedChart
+                                    android:id="@+id/groupChart"
+                                    android:background="@color/white"
+                                    android:layout_marginTop="30dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="300dp"/>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/top_od"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:background="#e0e0e0"
+                                android:fontFamily="@font/proxima_nova_semi_bold"
+                                android:text="Top 15 OD Customers (MN)"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/data_table"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    app:layout_constraintTop_toBottomOf="@id/search">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/list_bar"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="#244d80"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp">
+
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Child Code"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Customer Name"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Overdue"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="Group"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="Assignment"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="0 To 30"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="400dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="Billing Address"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="Reference Number"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="31 TO 60"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="Region"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="center"
+                                            android:text="Place"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="GSTIN No"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="20dp"
+                                            android:gravity="start|center"
+                                            android:text="PAN of Customer"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp"
+                                            android:visibility="gone" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="61 TO 90"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="91 To 180"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="181  To 365"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="366  To 730"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text=">731"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rv_Od_Customer_list"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clipToPadding="false"
+                                        android:paddingBottom="2dp"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/od_customers_layout" />
+
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/collection_VERTICAL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:background="#e0e0e0"
+                                android:fontFamily="@font/proxima_nova_semi_bold"
+                                android:text="COLLECTION PERFORMANCE SUMMARY BY VERTICAL – TOP 15 (USER COLLECTION PLAN) (MN)"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/Top_payors"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="#244d80"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp">
+
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Cluster"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Vertical"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Entitled Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="OD+ FTM Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Coverage"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="OD+FTM (HO)"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Achievement"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rv_collection_vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clipToPadding="false"
+                                        android:paddingBottom="10dp"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/collection_summary_vertical_layout" />
+
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/collection_responsibility"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:background="#e0e0e0"
+                                android:fontFamily="@font/proxima_nova_semi_bold"
+                                android:text="COLLECTION PERFORMANCE SUMMARY BY RESPONSIBILITY - TOP 15 (USER COLLECTION PLAN) (MN)"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/Top_responsibility"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="#244d80"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp">
+
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Cluster"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="150dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Vertical"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Responsibility"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Entitled Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="OD+FTM Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Coverage"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Achievement"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rv_collection_responsibility"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clipToPadding="false"
+                                        android:paddingBottom="10dp"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/colletion_summary_responsibility" />
+
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/collection_customer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:background="#e0e0e0"
+                                android:fontFamily="@font/proxima_nova_semi_bold"
+                                android:text="COLLECTION PERFORMANCE SUMMARY BY CUSTOMER - TOP 15 (USER COLLECTION PLAN) (MN)"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/Top_customer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:background="#244d80"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:paddingTop="3dp"
+                                        android:paddingBottom="3dp">
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Cluster"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Vertical"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Child Code"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="200dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="start|center"
+                                            android:text="Customer Name"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Entitled Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="OD + FTM Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="100dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Coverage"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Plan"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="Total Collection"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+                                        <TextView
+                                            android:layout_width="120dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginStart="10dp"
+                                            android:gravity="center"
+                                            android:text="% Achievement"
+                                            android:textColor="@color/white"
+                                            android:textSize="12sp" />
+
+                                    </LinearLayout>
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rv_collection_customer"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clipToPadding="false"
+                                        android:paddingBottom="10dp"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/collection_summary_customer" />
+
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         android:background="@color/purple_500"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_nav_view"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+
+            android:background="?selectableItemBackground"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_calender"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?selectableItemBackground"
+                android:src="@drawable/rms" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:background="?selectableItemBackground"
+            android:src="@drawable/ic_refresh"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavShift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/purple_500"
+        app:itemIconTint="@color/nav_item_state_list"
+        app:itemTextColor="@color/nav_item_state_list"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:menu="@menu/menu_items">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

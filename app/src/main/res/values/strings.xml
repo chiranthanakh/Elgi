@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">Elgi</string>
+
+
+    <string name="demo_content" translatable="false">Lorem ipsum dolor sit amet, consectetur\n adipiscing elit. Vivamus sodales faucibus\n dapibus. Etiam mattis leo quis laoreet dictum.</string>
+    <string name="demo_title" translatable="false">Lorem Ipsum</string>
+    <string name="next" translatable="false">Next</string>
+
+    <string name="On_board1" translatable="false">Welcome to ELGi</string>
+    <string name="Onboard1_content" translatable="false">With close to 60 years of experience in manufacturing air compressors, ELGi is a global leader in providing sustainable compressed air solutions. </string>
+    <string name="On_board2" translatable="false">Accounts &amp; Tax Compliance</string>
+    <string name="Onboard2_content" translatable="false">ELGi designs and manufactures an extensive range of innovative and technologically advanced compressed air solutions for a variety of industry applications.Over the years, ELGi has earned worldwide accolades for designing customer centric,  </string>
+    <string name="On_board3" translatable="false">Manpower Outsourcing</string>
+    <string name="Onboard3_content" translatable="false">compressed air solutions that are sustainable, and help companies achieve their productivity goals while ensuring a lower total cost of ownership. Our aspiration is to be the world’s preferred compressor manufacturer. ALWAYS BE THE CHOICE EVERYWHERE..</string>
+    <string name="On_board4" translatable="false">Internal Audit &amp; Controls</string>
+    <string name="Onboard4_content" translatable="false">Execute a comprehensive audit as per Companies Act in India. Proficiently execute various management audit with specific scope coverage to meet any particular business objective.</string>
+
+    <string-array name="ar_type">
+        <item>Pro-Team Solutions</item>
+        <item>JACK &amp; Associates</item>
+    </string-array>
+</resources>
