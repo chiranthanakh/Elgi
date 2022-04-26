@@ -523,6 +523,7 @@
                             android:id="@+id/ar_graph"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:orientation="vertical">
 
                             <androidx.cardview.widget.CardView
@@ -614,6 +615,7 @@
                         <LinearLayout
 
                             android:id="@+id/top_od"
+                            android:layout_marginTop="10dp"
                             android:layout_marginBottom="5dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -625,12 +627,12 @@
                                 android:gravity="start|center"
                                 android:paddingBottom="6dp"
                                 android:paddingTop="6dp"
+                                android:background="#244d80"
                                 android:paddingLeft="6dp"
                                 android:paddingRight="6dp"
-                                android:background="#e0e0e0"
                                 android:fontFamily="@font/proxima_nova_semi_bold"
                                 android:text="Top 15 OD Customers (MN)"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="15sp" />
 
                             <HorizontalScrollView
@@ -650,7 +652,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
-                                        android:background="#244d80"
+                                        android:background="#e0e0e0"
                                         android:gravity="center"
                                         android:orientation="horizontal"
                                         android:paddingTop="3dp"
@@ -663,7 +665,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Child Code"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -672,7 +674,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Customer Name"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -681,7 +683,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Overdue"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -690,7 +692,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="Group"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -700,7 +702,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="Assignment"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -710,7 +712,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="0 To 30"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -729,7 +731,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="Reference Number"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -748,7 +750,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="Region"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -758,7 +760,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="center"
                                             android:text="Place"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -768,7 +770,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="GSTIN No"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -778,7 +780,7 @@
                                             android:layout_marginStart="20dp"
                                             android:gravity="start|center"
                                             android:text="PAN of Customer"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp"
                                             android:visibility="gone" />
 
@@ -788,7 +790,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="61 TO 90"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -797,7 +799,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="91 To 180"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -806,7 +808,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="181  To 365"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -815,7 +817,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="366  To 730"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -824,7 +826,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text=">731"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
                                     </LinearLayout>
 
@@ -848,6 +850,8 @@
 
                             android:id="@+id/collection_VERTICAL"
                             android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
@@ -859,10 +863,10 @@
                                 android:paddingTop="6dp"
                                 android:paddingLeft="6dp"
                                 android:paddingRight="6dp"
-                                android:background="#e0e0e0"
+                                android:background="#244d80"
                                 android:fontFamily="@font/proxima_nova_semi_bold"
                                 android:text="COLLECTION PERFORMANCE SUMMARY BY VERTICAL – TOP 15 (USER COLLECTION PLAN) (MN)"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <HorizontalScrollView
@@ -880,7 +884,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
-                                        android:background="#244d80"
+                                        android:background="#e0e0e0"
                                         android:gravity="center"
                                         android:orientation="horizontal"
                                         android:paddingTop="3dp"
@@ -893,7 +897,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Cluster"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -902,7 +906,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Vertical"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -911,7 +915,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Entitled Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -921,7 +925,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="OD+ FTM Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -931,7 +935,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Coverage"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -941,7 +945,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="OD+FTM (HO)"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -950,7 +954,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -959,7 +963,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -968,7 +972,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Achievement"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                     </LinearLayout>
@@ -990,7 +994,8 @@
                         </LinearLayout>
 
                         <LinearLayout
-
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
                             android:id="@+id/collection_responsibility"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -1004,10 +1009,10 @@
                                 android:paddingTop="6dp"
                                 android:paddingLeft="6dp"
                                 android:paddingRight="6dp"
-                                android:background="#e0e0e0"
+                                android:background="#244d80"
                                 android:fontFamily="@font/proxima_nova_semi_bold"
                                 android:text="COLLECTION PERFORMANCE SUMMARY BY RESPONSIBILITY - TOP 15 (USER COLLECTION PLAN) (MN)"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <HorizontalScrollView
@@ -1025,7 +1030,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
-                                        android:background="#244d80"
+                                        android:background="#e0e0e0"
                                         android:gravity="center"
                                         android:orientation="horizontal"
                                         android:paddingTop="3dp"
@@ -1038,7 +1043,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Cluster"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1047,7 +1052,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Vertical"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1056,7 +1061,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Responsibility"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1066,7 +1071,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Entitled Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1076,7 +1081,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="OD+FTM Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1086,7 +1091,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Coverage"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1095,7 +1100,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1104,7 +1109,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1113,7 +1118,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Achievement"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                     </LinearLayout>
@@ -1148,10 +1153,10 @@
                                 android:paddingTop="6dp"
                                 android:paddingLeft="6dp"
                                 android:paddingRight="6dp"
-                                android:background="#e0e0e0"
+                                android:background="#244d80"
                                 android:fontFamily="@font/proxima_nova_semi_bold"
                                 android:text="COLLECTION PERFORMANCE SUMMARY BY CUSTOMER - TOP 15 (USER COLLECTION PLAN) (MN)"
-                                android:textColor="@color/black"
+                                android:textColor="@color/white"
                                 android:textSize="14sp" />
 
                             <HorizontalScrollView
@@ -1169,7 +1174,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:layout_gravity="center"
-                                        android:background="#244d80"
+                                        android:background="#e0e0e0"
                                         android:gravity="center"
                                         android:orientation="horizontal"
                                         android:paddingTop="3dp"
@@ -1182,7 +1187,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Cluster"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1191,7 +1196,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Vertical"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1200,7 +1205,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Child Code"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1210,7 +1215,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="start|center"
                                             android:text="Customer Name"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1220,7 +1225,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Entitled Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
 
@@ -1230,7 +1235,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="OD + FTM Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1239,7 +1244,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Coverage"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1248,7 +1253,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Plan"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                         <TextView
@@ -1257,7 +1262,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="Total Collection"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
                                         <TextView
                                             android:layout_width="120dp"
@@ -1265,7 +1270,7 @@
                                             android:layout_marginStart="10dp"
                                             android:gravity="center"
                                             android:text="% Achievement"
-                                            android:textColor="@color/white"
+                                            android:textColor="@color/black"
                                             android:textSize="12sp" />
 
                                     </LinearLayout>

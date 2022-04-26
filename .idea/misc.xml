@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/activity_main.xml" value="0.19947916666666668" />
-        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/dashboard_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/drawable/group_statelist.xml" value="0.1" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/activity_collection_summary.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/activity_month_aractivity.xml" value="0.1" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/activity_onboarding.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/collection_summary_customer.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/collection_summary_vertical_layout.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/colletion_summary_responsibility.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/dashboard_layout.xml" value="0.13" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/drawer_list_group.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/month_end_adaptor_layout.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/month_end_ar_layout.xml" value="0.1" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/od_customers_layout.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Personal/Downloads/Elgi/app/src/main/res/layout/onboarding_1.xml" value="0.18385416666666668" />
       </map>
     </option>
   </component>

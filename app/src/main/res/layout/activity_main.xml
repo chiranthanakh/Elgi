@@ -113,6 +113,7 @@
                     android:background="@color/grey_very_light"/>
 
                 <TextView
+                    android:id="@+id/tv_current_ar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?selectableItemBackground"
@@ -135,7 +136,7 @@
                     android:background="@color/grey_very_light"/>
 
                 <TextView
-
+                    android:id="@+id/tv_collection_summery"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?selectableItemBackground"
@@ -159,7 +160,7 @@
 
 
                 <TextView
-
+                    android:id="@+id/tv_collection_summery_user"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?selectableItemBackground"
@@ -182,7 +183,7 @@
                     android:background="@color/grey_very_light"/>
 
                 <TextView
-
+                    android:id="@+id/tv_collection_report"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="?selectableItemBackground"

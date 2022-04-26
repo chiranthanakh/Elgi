@@ -25,7 +25,7 @@ public class MonthEndArAdapter extends RecyclerView.Adapter<MonthEndArAdapter.Vi
     @Override
     public MonthEndArAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-        View listItem= layoutInflater.inflate(R.layout.month_end_ar_layout, parent, false);
+        View listItem= layoutInflater.inflate(R.layout.month_end_adaptor_layout, parent, false);
         MonthEndArAdapter.ViewHolder viewHolder = new MonthEndArAdapter.ViewHolder(listItem);
         return viewHolder;
     }

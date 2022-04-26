@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button btn_filterData_dashboard;
 
-    TextView tv_month_endAR;
+    TextView tv_month_endAR,tv_current_ar,tv_collection_summery,tv_collection_user,tv_collection_reports;
 
     //Ar Bar CHart
     BarChart stackedChart;
@@ -191,8 +191,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         iv_nav_view.setOnClickListener(this);
 
         tv_month_endAR=findViewById(R.id.tv_month_endAR);
+        tv_current_ar = findViewById(R.id.tv_current_ar);
+        tv_collection_summery = findViewById(R.id.tv_collection_summery);
+        tv_collection_user = findViewById(R.id.tv_collection_summery_user);
+        tv_collection_reports = findViewById(R.id.tv_collection_report);
+        tv_current_ar.setOnClickListener(this);
         tv_month_endAR.setOnClickListener(this);
-
+        tv_collection_summery.setOnClickListener(this);
+        tv_collection_user.setOnClickListener(this);
+        tv_collection_reports.setOnClickListener(this);
         combinedgraphset();
     }
 
@@ -481,6 +488,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_month_endAR:
                 Intent intentMonthend = new Intent(MainActivity.this,MonthEndARActivity.class);
                 startActivity(intentMonthend);
+                break;
+            case R.id.tv_current_ar:
+                Intent intentMonthend1 = new Intent(MainActivity.this,MonthEndARActivity.class);
+                startActivity(intentMonthend1);
+                break;
+            case R.id.tv_collection_summery:
+                Intent intentMonthend2 = new Intent(MainActivity.this,CollectionSummaryActivity.class);
+                startActivity(intentMonthend2);
+                break;
+            case R.id.tv_collection_summery_user:
+                Intent intentMonthend3 = new Intent(MainActivity.this,CollectionSummaryActivity.class);
+                startActivity(intentMonthend3);
+                break;
+            case R.id.tv_collection_report:
+                Intent intentMonthend4 = new Intent(MainActivity.this,MonthEndARActivity.class);
+                startActivity(intentMonthend4);
                 break;
         }
     }
