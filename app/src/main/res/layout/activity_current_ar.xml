@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Activities.MonthEndARActivity">
+    tools:context=".Activities.CurrentArActivity">
+
 
     <LinearLayout
         android:id="@+id/toolbar"
@@ -42,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/lato_bold"
-                    android:text="Month End AR"
+                    android:text="Current AR"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
@@ -128,59 +129,8 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="10dp"
-                                android:layout_marginTop="5dp"
-                                android:layout_weight="1"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="10dp"
-                                    android:layout_marginStart="5dp"
-                                    android:fontFamily="@font/proxima_nova_semi_bold"
-                                    android:gravity="start|center"
-                                    android:paddingTop="2dp"
-                                    android:paddingRight="6dp"
-                                    android:text="Month"
-                                    android:textColor="@color/black"
-                                    android:textSize="12sp" />
-
-                                <androidx.constraintlayout.widget.ConstraintLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
-
-                                    <com.google.android.material.textfield.TextInputLayout
-                                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:textColorHint="@color/grey_dark"
-                                        app:boxStrokeColor="@color/grey"
-                                        app:boxStrokeWidth="0.5dp"
-                                        app:boxStrokeWidthFocused="0.9dp"
-                                        app:layout_constraintStart_toStartOf="parent"
-                                        app:layout_constraintTop_toTopOf="parent"
-                                        app:startIconTint="@color/grey_light">
-
-                                        <EditText
-                                            android:id="@+id/edt_monthEnd_month"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="50dp"
-                                            android:focusable="false"
-                                            android:fontFamily="@font/proxima_family"
-                                            android:hint="Select Month"
-                                            android:textColor="@color/black"
-                                            android:textColorHint="@color/grey"
-                                            android:textSize="14sp" />
-                                    </com.google.android.material.textfield.TextInputLayout>
-                                </androidx.constraintlayout.widget.ConstraintLayout>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
                                 android:layout_marginEnd="10dp"
-                                android:layout_marginStart="5dp"
+                                android:layout_marginStart="10dp"
                                 android:layout_marginTop="5dp"
                                 android:layout_weight="1"
                                 android:orientation="vertical">
@@ -199,7 +149,7 @@
                                     android:textSize="12sp" />
 
                                 <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-                                    android:id="@+id/sp_monthEnd_cluster"
+                                    android:id="@+id/sp_ar_Type"
                                     android:layout_width="match_parent"
                                     android:layout_height="50dp"
                                     android:layout_marginTop="6dp"
@@ -243,7 +193,6 @@
 
                                 <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                                     android:layout_width="match_parent"
-                                    android:id="@+id/sp_monthEnd_vertical"
                                     android:layout_height="50dp"
                                     android:layout_marginTop="6dp"
                                     android:background="@drawable/spinner_background"
@@ -281,7 +230,6 @@
                                 <com.toptoche.searchablespinnerlibrary.SearchableSpinner
                                     android:layout_width="match_parent"
                                     android:layout_height="50dp"
-                                    android:id="@+id/sp_monthEnd_region"
                                     android:layout_marginTop="6dp"
                                     android:background="@drawable/spinner_background"
                                     android:entries="@array/ar_type"
@@ -341,7 +289,6 @@
 
                                         <com.google.android.material.textfield.TextInputEditText
                                             android:layout_width="match_parent"
-                                            android:id="@+id/edt_monthEnd_childCode"
                                             android:layout_height="50dp"
                                             android:background="@null"
                                             android:fontFamily="@font/proxima_family"
@@ -399,7 +346,6 @@
                                         <com.google.android.material.textfield.TextInputEditText
                                             android:layout_width="match_parent"
                                             android:layout_height="50dp"
-                                            android:id="@+id/edt_monthEnd_orgDoc"
                                             android:background="@null"
                                             android:fontFamily="@font/proxima_family"
                                             android:inputType="text"
@@ -425,7 +371,7 @@
                         android:layout_marginEnd="10dp">
 
                         <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/btn_monthEnd_search"
+                            android:id="@+id/btn_profile_submit"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
                             android:layout_alignParentEnd="true"
@@ -453,7 +399,7 @@
                             app:cardElevation="2dp">
 
                             <ImageView
-                                android:id="@+id/iv_monthEnd_reset"
+                                android:id="@+id/iv_back"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
@@ -473,7 +419,7 @@
 
 
                         <Button
-                            android:id="@+id/btn_monthEnd_downCsv"
+                            android:id="@+id/btn_nav_profile"
                             android:text="Download (.Csv)"
                             app:icon="@drawable/ic_download"
                             android:backgroundTint="#FF9800"
@@ -491,7 +437,7 @@
                             />
 
                         <Button
-                            android:id="@+id/btn_monthEnd_downXlsx"
+                            android:id="@+id/btn_nav_logout"
                             android:text="Download (.xlsx)"
                             app:icon="@drawable/ic_download"
                             android:drawableTint="@color/white"
@@ -508,8 +454,6 @@
                             android:textSize="12sp"
                             android:textColor="@color/white"
                             />
-
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -529,7 +473,7 @@
                             android:paddingRight="6dp"
                             android:background="#e0e0e0"
                             android:fontFamily="@font/proxima_nova_semi_bold"
-                            android:text="Month End AR Report"
+                            android:text="Current AR Report"
                             android:textColor="@color/black"
                             android:textSize="15sp" />
 
@@ -671,13 +615,13 @@
 
 
                                 <androidx.recyclerview.widget.RecyclerView
-                                    android:id="@+id/rv_month_endAR"
+                                    android:id="@+id/rv_currentAR"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:clipToPadding="false"
                                     android:paddingBottom="2dp"
                                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                                    tools:listitem="@layout/month_end_ar_layout" />
+                                    tools:listitem="@layout/current_ar_layout" />
 
 
                             </LinearLayout>

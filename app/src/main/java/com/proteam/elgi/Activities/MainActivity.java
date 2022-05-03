@@ -488,9 +488,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.tv_month_endAR:
                 Intent intentMonthend = new Intent(MainActivity.this,MonthEndARActivity.class);
                 startActivity(intentMonthend);
+
                 break;
             case R.id.tv_current_ar:
-                Intent intentMonthend1 = new Intent(MainActivity.this,MonthEndARActivity.class);
+                Intent intentMonthend1 = new Intent(MainActivity.this,CurrentArActivity.class);
                 startActivity(intentMonthend1);
                 break;
             case R.id.tv_collection_summery:
@@ -533,4 +534,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ((TextView) parent.getChildAt(0)).setTextSize(12);
         }
     };
+
+
 }

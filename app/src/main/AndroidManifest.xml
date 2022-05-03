@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Elgi">
         <activity
+            android:name=".Activities.CurrentArActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AllReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.CollectionSummaryActivity"
             android:exported="false" />
         <activity

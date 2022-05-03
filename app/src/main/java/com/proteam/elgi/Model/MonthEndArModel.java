@@ -2,125 +2,118 @@ package com.proteam.elgi.Model;
 
 public class MonthEndArModel {
 
-    String Consol, center ,Cluster, Vertical, Country, Ar_Type, Console, Area, Region, DPST, Org_TT, Month, Sales_Engg_Name;
+    String MonthEnd_cluster, MonthEnd_vertical ,MonthEnd_region, MonthEnd_month, MonthEnd_childCode, MonthEnd_CusName,
+            MonthEnd_OrgDocNum, MonthEnd_InvoiceDate, MonthEnd_RevDueDate, MonthEnd_InvoiceAmount, MonthEnd_PaidAmount,
+            MonthEnd_BalanceAmount;
 
-    public MonthEndArModel(String consol, String center, String cluster, String vertical, String country, String ar_Type, String console, String area, String region, String DPST, String org_TT, String month, String sales_Engg_Name) {
-        Consol = consol;
-        this.center = center;
-        Cluster = cluster;
-        Vertical = vertical;
-        Country = country;
-        Ar_Type = ar_Type;
-        Console = console;
-        Area = area;
-        Region = region;
-        this.DPST = DPST;
-        Org_TT = org_TT;
-        Month = month;
-        Sales_Engg_Name = sales_Engg_Name;
+    public MonthEndArModel(String monthEnd_cluster, String monthEnd_vertical, String monthEnd_region, String monthEnd_month, String monthEnd_childCode, String monthEnd_CusName, String monthEnd_OrgDocNum, String monthEnd_InvoiceDate, String monthEnd_RevDueDate, String monthEnd_InvoiceAmount, String monthEnd_PaidAmount, String monthEnd_BalanceAmount) {
+        MonthEnd_cluster = monthEnd_cluster;
+        MonthEnd_vertical = monthEnd_vertical;
+        MonthEnd_region = monthEnd_region;
+        MonthEnd_month = monthEnd_month;
+        MonthEnd_childCode = monthEnd_childCode;
+        MonthEnd_CusName = monthEnd_CusName;
+        MonthEnd_OrgDocNum = monthEnd_OrgDocNum;
+        MonthEnd_InvoiceDate = monthEnd_InvoiceDate;
+        MonthEnd_RevDueDate = monthEnd_RevDueDate;
+        MonthEnd_InvoiceAmount = monthEnd_InvoiceAmount;
+        MonthEnd_PaidAmount = monthEnd_PaidAmount;
+        MonthEnd_BalanceAmount = monthEnd_BalanceAmount;
     }
 
-    public String getConsol() {
-        return Consol;
+    public String getMonthEnd_cluster() {
+        return MonthEnd_cluster;
     }
 
-    public void setConsol(String consol) {
-        Consol = consol;
+    public void setMonthEnd_cluster(String monthEnd_cluster) {
+        MonthEnd_cluster = monthEnd_cluster;
     }
 
-    public String getCenter() {
-        return center;
+    public String getMonthEnd_vertical() {
+        return MonthEnd_vertical;
     }
 
-    public void setCenter(String center) {
-        this.center = center;
+    public void setMonthEnd_vertical(String monthEnd_vertical) {
+        MonthEnd_vertical = monthEnd_vertical;
     }
 
-    public String getCluster() {
-        return Cluster;
+    public String getMonthEnd_region() {
+        return MonthEnd_region;
     }
 
-    public void setCluster(String cluster) {
-        Cluster = cluster;
+    public void setMonthEnd_region(String monthEnd_region) {
+        MonthEnd_region = monthEnd_region;
     }
 
-    public String getVertical() {
-        return Vertical;
+    public String getMonthEnd_month() {
+        return MonthEnd_month;
     }
 
-    public void setVertical(String vertical) {
-        Vertical = vertical;
+    public void setMonthEnd_month(String monthEnd_month) {
+        MonthEnd_month = monthEnd_month;
     }
 
-    public String getCountry() {
-        return Country;
+    public String getMonthEnd_childCode() {
+        return MonthEnd_childCode;
     }
 
-    public void setCountry(String country) {
-        Country = country;
+    public void setMonthEnd_childCode(String monthEnd_childCode) {
+        MonthEnd_childCode = monthEnd_childCode;
     }
 
-    public String getAr_Type() {
-        return Ar_Type;
+    public String getMonthEnd_CusName() {
+        return MonthEnd_CusName;
     }
 
-    public void setAr_Type(String ar_Type) {
-        Ar_Type = ar_Type;
+    public void setMonthEnd_CusName(String monthEnd_CusName) {
+        MonthEnd_CusName = monthEnd_CusName;
     }
 
-    public String getConsole() {
-        return Console;
+    public String getMonthEnd_OrgDocNum() {
+        return MonthEnd_OrgDocNum;
     }
 
-    public void setConsole(String console) {
-        Console = console;
+    public void setMonthEnd_OrgDocNum(String monthEnd_OrgDocNum) {
+        MonthEnd_OrgDocNum = monthEnd_OrgDocNum;
     }
 
-    public String getArea() {
-        return Area;
+    public String getMonthEnd_InvoiceDate() {
+        return MonthEnd_InvoiceDate;
     }
 
-    public void setArea(String area) {
-        Area = area;
+    public void setMonthEnd_InvoiceDate(String monthEnd_InvoiceDate) {
+        MonthEnd_InvoiceDate = monthEnd_InvoiceDate;
     }
 
-    public String getRegion() {
-        return Region;
+    public String getMonthEnd_RevDueDate() {
+        return MonthEnd_RevDueDate;
     }
 
-    public void setRegion(String region) {
-        Region = region;
+    public void setMonthEnd_RevDueDate(String monthEnd_RevDueDate) {
+        MonthEnd_RevDueDate = monthEnd_RevDueDate;
     }
 
-    public String getDPST() {
-        return DPST;
+    public String getMonthEnd_InvoiceAmount() {
+        return MonthEnd_InvoiceAmount;
     }
 
-    public void setDPST(String DPST) {
-        this.DPST = DPST;
+    public void setMonthEnd_InvoiceAmount(String monthEnd_InvoiceAmount) {
+        MonthEnd_InvoiceAmount = monthEnd_InvoiceAmount;
     }
 
-    public String getOrg_TT() {
-        return Org_TT;
+    public String getMonthEnd_PaidAmount() {
+        return MonthEnd_PaidAmount;
     }
 
-    public void setOrg_TT(String org_TT) {
-        Org_TT = org_TT;
+    public void setMonthEnd_PaidAmount(String monthEnd_PaidAmount) {
+        MonthEnd_PaidAmount = monthEnd_PaidAmount;
     }
 
-    public String getMonth() {
-        return Month;
+    public String getMonthEnd_BalanceAmount() {
+        return MonthEnd_BalanceAmount;
     }
 
-    public void setMonth(String month) {
-        Month = month;
-    }
-
-    public String getSales_Engg_Name() {
-        return Sales_Engg_Name;
-    }
-
-    public void setSales_Engg_Name(String sales_Engg_Name) {
-        Sales_Engg_Name = sales_Engg_Name;
+    public void setMonthEnd_BalanceAmount(String monthEnd_BalanceAmount) {
+        MonthEnd_BalanceAmount = monthEnd_BalanceAmount;
     }
 }
